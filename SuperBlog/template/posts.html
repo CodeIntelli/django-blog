@@ -1,0 +1,37 @@
+{% extends 'base.html' %} {% block title %}Iblogs | Home: Create Awesome Blogs
+With Us{% endblock title %} {% block content %}
+<center>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col s12 m10">
+        
+        <h1>{{postData.title}}</h1>
+        <small>{{postData.cat.title}}</small><br />
+        <img
+          src="{{postData.image.url}}"
+          alt="{{postData.title}}"
+          title="{{postData.title}}"
+          class="responsive-img"
+        />
+        <p class="text-center">{{postData.content | safe}}</p>
+      </div>
+      <div class="col s12 m2">
+        {% for cats in cats %}
+ <div class="card">
+   <div class="img-container">
+     <img src="{{cats.image.url}}" class="responsive-img" alt="">
+     <div class="card-title">
+       {{cats.title}}
+     </div>
+     <!-- <small>{{cats.description | truncatewords:20 }}</small> -->
+     <br/>
+      <a href="category/{{cats.url}}" class="btn bg-primary">Read More</a>
+  </div>
+</div>
+{% endfor %} 
+
+      </div>
+    </div>
+  </div>
+</center>
+{% endblock content %}

@@ -1,0 +1,24 @@
+<!-- Dropdown Structure -->
+<ul id="dropdown1" class="dropdown-content">
+  {% for cats in cats %}
+  <li><a href="#!">{{cats.title}}</a></li>
+  <li class="divider"></li>
+  {% endfor %}
+</ul>
+<nav class="bg-primary">
+  <div class="container">
+    <div class="nav-wrappe">
+      <a href="/" class="brand-logo">SUPER BLOG</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="/about">ABOUT</a></li>
+        <li><a href="/admin">ADMIN</a></li>
+        <!-- Dropdown Trigger -->
+        <li>
+          <a class="dropdown-trigger" href="#" data-target="dropdown1"
+            >CATEGORY<i class="material-icons right">arrow_drop_down</i></a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

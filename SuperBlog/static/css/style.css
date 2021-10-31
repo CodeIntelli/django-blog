@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.bg-primary {
+  background: #477091 !important;
+}
+
+.mt20 {
+  margin-top: 20px;
+}
+
+.mt40 {
+  margin-top: 40px;
+}
+
+.mt60 {
+  margin-top: 60px;
+}
+
+.mt80 {
+  margin-top: 80px;
+}
+
+.mt100 {
+  margin-top: 100px;
+}
+
+.mt120 {
+  margin-top: 120px;
+}
+
+.mt20 {
+  margin-top: 20px;
+}
+
+h1 {
+  font-size: 20px !important;
+}
+p,
+h5 {
+  font-size: 16px !important;
+}
+
+.owl-item{
+  margin-left: 20px !important;
+}
+.container-fluid{
+  width: 90%;
+}

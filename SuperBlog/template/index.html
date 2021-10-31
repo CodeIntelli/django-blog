@@ -1,0 +1,40 @@
+{% extends 'base.html' %} {% block title %}Iblogs | Home: Create Awesome Blogs
+With Us{% endblock title %} {% block content %} 
+ 
+
+<div class="owl-carousel">
+ {% for cats in cats %}
+ <div class="card">
+   <div class="img-container">
+     <img src="{{cats.image.url}}" class="responsive-img" alt="">
+     <div class="card-title">
+       {{cats.title}}
+     </div>
+     <!-- <small>{{cats.description | truncatewords:20 }}</small> -->
+     <br/>
+      <a href="category/{{cats.url}}" class="btn bg-primary">Read More</a>
+  </div>
+</div>
+{% endfor %} 
+
+</div>
+
+
+<div class="container">
+  {% for p in post_Data %}
+  <div class="row">
+    <div class="col s12 m8 mt20">
+      <h1>{{p.title}}</h1>
+      <h5>{{p.content | truncatewords:100 | safe}}</h5>
+      <a href="blog/{{p.url}}" class="btn bg-primary mt20">Read More</a>
+    </div>
+
+    <div class="col s12 m4 mt80">
+      <img src="{{p.image.url}}" alt="{{p.title}} width="700px"
+      class="responsive-img" title="{{p.title}}">
+    </div>
+  </div>
+  {% endfor %}
+</div>
+
+{% endblock content %}

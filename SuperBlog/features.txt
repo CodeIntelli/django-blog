@@ -1,0 +1,14 @@
+BLOG PROJECT
+FONTEND PORTION:-
+CREATE LOGO
+CHOOSE THEME
+BACKEND:- 
+1. user can read blog if they want to create blog then they must login
+2. after creating blog user can update, delete blog
+3. user must have verify their email address after that they have create BLOG
+4. user can add comment to the blog
+5. user can contact admin for any query or issue 
+6. user can see their views on their post
+7. on 1M Views and 10k Likes user can earn money on single blog-50k INR ($600)
+
+ADMIN FIRST VERIFY BLOG THEN BLOG WILL BE DISPLAY ON THE DASHBOARD
